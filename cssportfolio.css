@@ -15,7 +15,7 @@
   --bg-color: #1f242d;
   --second-bg-color: #323946;
   --text-color: #fff;
-  --main-color: #de8f04;
+  --main-color: #0ef;
 }
 
 html {
@@ -215,7 +215,6 @@ span {
   font-weight: 600;
   transition: 0.5s ease;
 }
-
 .btn:hover {
   box-shadow: none;
 }
@@ -239,6 +238,7 @@ span {
   align-items: center;
   gap: 2rem;
   background: var(--second-bg-color);
+  padding-bottom: 50px;
 }
 
 .heading {
@@ -246,6 +246,22 @@ span {
   font-size: 4.5rem;
 }
 
+.downloadbtn{
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.3rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+.downloadbtn:hover {
+  box-shadow: none;
+}
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
@@ -253,10 +269,10 @@ span {
 .about-content h3 {
   font-size: 2.6rem;
 }
-/* .about-content p {
+.about-content p {
   font-size: 1.6rem;
-  margin-top: 2rem;
-} */
+  margin-top: 0.6rem;
+}
 
 .skill h2 {
   margin-bottom: 5rem;
