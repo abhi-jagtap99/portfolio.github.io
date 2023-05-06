@@ -42,11 +42,11 @@ ScrollReveal({
   delay: 100
 });
 
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .skill-container, .project-box, .contact form', 
+ScrollReveal().reveal('.home-content, .heading, .education_heading, .skill-title', {origin: 'top'});
+ScrollReveal().reveal('.home-img, .skill-container, .project-box, .contact form, .service-item', 
 {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
+ScrollReveal().reveal('.home-content h1, .about-img, .even', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-content, .odd', {origin: 'right'});
 
 
 
@@ -56,11 +56,11 @@ const text = document.querySelector('.second-text');
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "Frontend Developer";
+    text.textContent = "Student";
   }, 0);
-  // setTimeout(() => {
-  //   text.textContent = "Backend Developer";
-  // }, 4000);
+  setTimeout(() => {
+    text.textContent = "Frontend Developer";
+  }, 4000);
   // setTimeout(() => {
   //   text.textContent = "Blogger";
   // }, 8000);
@@ -72,6 +72,31 @@ textLoad();
 setInterval(textLoad, 12000);
 
 
+const serviceItem = document.querySelector(".service-item");
+const popup = document.querySelector(".popup-box");
+const popupClose = popup.querySelector(".popup-close");
+serviceItem.addEventListener("click",function(event){
+  if(event.target.tagName.toLowerCase() == "button"){
+    const item = event.target.parentElement;
+    const title = item.querySelector(".title").innerHTML;
+    const readMore = item.querySelector(".read-more").innerHTML;
+    popup.querySelector(".title").innerHTML = title;
+    popup.querySelector(".popup-body").innerHTML = readMore;
+    popupBox();
+  }
+})
+
+popupClose.addEventListener("click", popupBox);
+
+popup.addEventListener("click", function(event){
+  if(event.target == popup){
+    popupBox();
+  }
+})
+
+function popupBox(){
+  popup.classList.toggle("open");
+}
 
 
 
