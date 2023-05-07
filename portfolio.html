@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio Website</title>
+
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="cssportfolio.css" />
 </head>
@@ -238,19 +239,10 @@
         <h3 class="title">HTML5</h3>
       </div>
       <div class="popup-body">
-        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quos nobis incidunt
+        <p class="para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quos nobis incidunt
           quisquam. Odit
-          harum commodi cumque hic, vitae Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. At, architecto! Quaerat sequi eius reiciendis illo aut natus dolores rerum! Corrupti quia voluptas sunt
-          aut eius ullam commodi laborum magnam ex deserunt amet sint iusto, nisi ad excepturi eligendi tempora ducimus
-          illo deleniti placeat. Qui corrupti dicta vel odio tempora possimus reprehenderit, quibusdam optio alias omnis
-          aliquid suscipit, eos incidunt rem labore commodi molestiae veniam eius, quae perferendis repellendus
-          exercitationem cupiditate? Accusamus eveniet reiciendis, maxime ducimus architecto eos vel sunt sit nobis modi
-          suscipit corrupti ratione mollitia minus itaque aperiam non dolorum fugit cupiditate in obcaecati. Eaque
-          aperiam doloremque, possimus dolore rem officiis commodi sint voluptas, sunt dolor eum assumenda voluptates?
-          Architecto quam a est nostrum asperiores nulla ducimus odio aspernatur iure minus soluta esse vero quae
-          dignissimos corporis tempora at provident, cumque sed temporibus voluptatem culpa vel nobis totam! Quia dolor
-          sint perspiciatis fugiat dolorum soluta sunt error ab inventore! </p>
+        </p>
       </div>
       <div class="popup-footer">
         <button class="popup-close" type="button">Close</button>
@@ -379,7 +371,7 @@
 
     <div class="project-container">
       <div class="project-box">
-        <img src="images/img1.jpg" alt="project templete" />
+        <img src="images/img2.jpg" alt="project templete" />
         <div class="project-layer">
           <h4>Historic India</h4>
           <p>
@@ -415,23 +407,33 @@
       </div>
     </div>
   </section>
+
+
   <!--711871ec4568831fbf310d58b3282637-->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
+    <div class="contact_form">
+      <form action="https://formsubmit.co/711871ec4568831fbf310d58b3282637" method="POST">
 
-    <form action="https://formsubmit.co/711871ec4568831fbf310d58b3282637" method="POST">
-      <div class=" input-box">
-        <input type="text" name="Name" placeholder="Full Name" required />
-        <input type="email" name="Email" placeholder="Email" required />
-      </div>
-      <div class="input-box">
-        <input type="number" name="Number" placeholder="Mobail Number" required />
-        <input type="text" name="Subject" placeholder="Email Subject" required />
-      </div>
-      <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="btn" />
-    </form>
+        <input type="text" name="_honey" style="display: none;">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="msgsend.html">
+        <div class=" input-box">
+          <input type="text" name="Name" placeholder="Full Name" required />
+          <input type="email" name="Email" placeholder="Email" required />
+        </div>
+        <div class="input-box">
+          <input type="number" name="Number" placeholder="Mobail Number" required />
+          <input type="text" name="Subject" placeholder="Email Subject" required />
+        </div>
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </div>
   </section>
+
+
 
   <footer class="footer">
     <div class="footer-text">

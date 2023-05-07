@@ -58,9 +58,9 @@ const textLoad = () => {
   setTimeout(() => {
     text.textContent = "Student";
   }, 0);
-  setTimeout(() => {
-    text.textContent = "Frontend Developer";
-  }, 4000);
+  // setTimeout(() => {
+  //   text.textContent = "Frontend Developer";
+  // }, 4000);
   // setTimeout(() => {
   //   text.textContent = "Blogger";
   // }, 8000);
@@ -97,19 +97,3 @@ popup.addEventListener("click", function(event){
 function popupBox(){
   popup.classList.toggle("open");
 }
-
-
-
-
-
-
-
-
-// fail code
-// const typed = new Typed('multiple-text', {
-//   strings: ['Frontend Developer', 'Backend Developer'],
-//   typeSpeed: 100,
-//   backSpeed: 100,
-//   backDelay: 1000,
-//   loop: true
-// });
