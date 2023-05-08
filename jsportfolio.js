@@ -62,7 +62,7 @@ const textLoad = () => {
   //   text.textContent = "Frontend Developer";
   // }, 4000);
   // setTimeout(() => {
-  //   text.textContent = "Blogger";
+  //   text.textContent = "Full-Stack Devloper";
   // }, 8000);
   
 };

@@ -930,6 +930,19 @@ s .project-layer p {
   .contact form .input-box input{
     width: 100%;
   }
+  
+  .popup_msg{
+      width: 360px;
+      height: 300px;
+      padding: 30px 20px;
+      background: var(--second-bg-color);
+      border-radius: 10px;
+      box-sizing: border-box;
+      z-index: 2;
+      text-align: center;
+  }
+
+
 }
 
 @media(max-width: 420px){
@@ -947,6 +960,17 @@ s .project-layer p {
   .write.second-text{
     font-size: 2.6rem;
   }
+  .popup_msg{
+    width: 320px;
+    height: 300px;
+    padding: 30px 20px;
+    background: var(--second-bg-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+
 }
 @media(max-width: 362px){
   .write.second-text{
