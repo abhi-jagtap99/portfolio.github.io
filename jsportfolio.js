@@ -59,10 +59,10 @@ const textLoad = () => {
     text.textContent = "Student";
   }, 0);
   // setTimeout(() => {
-  //   text.textContent = "Frontend Developer";
+  //   text.textContent = "";
   // }, 4000);
   // setTimeout(() => {
-  //   text.textContent = "Full-Stack Devloper";
+  //   text.textContent = "";
   // }, 8000);
   
 };

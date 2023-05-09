@@ -89,6 +89,8 @@ section {
   animation: floatImage 4s ease-in-out infinite;
 }
 
+
+
 @keyframes floatImage{
   0%{
     transform: translateY(0);
@@ -106,6 +108,11 @@ section {
   filter: drop-shadow(0 0 20px var(--main-color));
   clip-path: circle(40% at 50% 45%);
 }
+
+.home-img-main{
+  margin-left:180px
+}
+
 
 .home-content h3 {
   font-size: 3.2rem;
@@ -348,11 +355,6 @@ span {
 .checkpoint:nth-child(odd) div::before{
   right: -3.9em;
 }
-
-
-
-
-
 
 
 
@@ -632,7 +634,7 @@ span {
   color: #a51da5;
   text-decoration: underline;
 }
-s .project-layer p {
+.project-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
   line-height: 2.1rem;
@@ -857,7 +859,9 @@ s .project-layer p {
   .home-img img{
     width: 70vw;
     margin-top: 4rem;
+    margin-right: 195px;
   }
+
   .about{
     flex-direction: column-reverse;
   }
